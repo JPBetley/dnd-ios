@@ -10,15 +10,17 @@
 #import "Profession.h"
 #import "Race.h"
 
-const int HEALTH_TAG = 0;
-const int MAX_HEALTH_TAG = 1;
-const int ARMOR_CLASS_TAG = 2;
-const int STRENGTH_TAG = 3;
-const int DEXTERITY_TAG = 4;
-const int CONSTITUTION_TAG = 5;
-const int INTELLIGENCE_TAG = 6;
-const int WISDOM_TAG = 7;
-const int CHARISMA_TAG = 8;
+enum {
+    HEALTH_TAG = 0,
+    MAX_HEALTH_TAG,
+    ARMOR_CLASS_TAG,
+    STRENGTH_TAG,
+    DEXTERITY_TAG,
+    CONSTITUTION_TAG,
+    INTELLIGENCE_TAG,
+    WISDOM_TAG,
+    CHARISMA_TAG
+};
 
 @interface DDNStatsViewController ()
 @property UITextField *statText;
@@ -41,7 +43,6 @@ const int CHARISMA_TAG = 8;
 	// Do any additional setup after loading the view.
     self.classLabel.text = ((Profession *)self.character.profession).name;
     self.raceLabel.text = ((Race *)self.character.race).name;
-    self.navigationController.title = self.character.name;
 
     [self refreshStats];
 }

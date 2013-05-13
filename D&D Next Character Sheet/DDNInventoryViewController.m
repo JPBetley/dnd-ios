@@ -7,6 +7,7 @@
 //
 
 #import "DDNInventoryViewController.h"
+#import "DDNWeaponViewController.h"
 #import "Armor.h"
 #import "Gear.h"
 #import "Weapon.h"
@@ -37,6 +38,11 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -44,13 +50,15 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-
-        if ([[segue destinationViewController] respondsToSelector:@selector(setCharacter:)]) {
-            [[segue destinationViewController] performSelector:@selector(setCharacter:) withObject:self.character];
-        }
-        if ([[segue destinationViewController] respondsToSelector:@selector(setManagedObjectContext:)]) {
-            [[segue destinationViewController] performSelector:@selector(setManagedObjectContext:) withObject:self.managedObjectContext];
-        }
+    if ([[segue identifier] isEqualToString:@"weapon"]) {
+        [((DDNWeaponViewController *)[segue destinationViewController]) setSelectedRow:self.tableView.indexPathForSelectedRow.row];
+    }
+    if ([[segue destinationViewController] respondsToSelector:@selector(setCharacter:)]) {
+        [[segue destinationViewController] performSelector:@selector(setCharacter:) withObject:self.character];
+    }
+    if ([[segue destinationViewController] respondsToSelector:@selector(setManagedObjectContext:)]) {
+        [[segue destinationViewController] performSelector:@selector(setManagedObjectContext:) withObject:self.managedObjectContext];
+    }
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField {
@@ -79,10 +87,6 @@
 -(void)updateCp:(id)sender {
     self.character.cp = [NSNumber numberWithDouble:self.textField.text.doubleValue];
     [self.textField resignFirstResponder];
-}
-
--(IBAction)done:(UIStoryboardSegue *)sender {
-    [[[UIAlertView alloc] initWithTitle:@"TEST" message:@"TEST" delegate:nil cancelButtonTitle:@"test" otherButtonTitles:@"", nil] show];
 }
 
 #pragma mark - Table view data source

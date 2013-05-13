@@ -16,5 +16,5 @@
 @property (nonatomic, strong) Character *character;
 @property (nonatomic, strong) NSMutableArray *weapons;
 @property (nonatomic, strong) Weapon *selectedWeapon;
-
+@property (nonatomic, assign) NSInteger selectedRow;
 @end

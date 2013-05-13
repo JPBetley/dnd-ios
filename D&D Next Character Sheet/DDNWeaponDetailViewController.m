@@ -7,6 +7,7 @@
 //
 
 #import "DDNWeaponDetailViewController.h"
+#import "DDNDetailViewController.h"
 
 @interface DDNWeaponDetailViewController ()
 
@@ -27,7 +28,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.nameLabel.text = self.weapon.name;
+    self.navigationItem.title = self.weapon.name;
     self.damageLabel.text = self.weapon.damage;
     self.priceLabel.text = self.weapon.price;
     self.typeLabel.text = self.weapon.type;
@@ -39,6 +40,19 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"doneWeapon"]) {
+        DDNDetailViewController *detailVC = segue.destinationViewController;
+        NSMutableArray *weapons = [NSMutableArray arrayWithArray:detailVC.character.weapons.allObjects];
+        if ([weapons count] > self.selectedRow) {
+            [weapons replaceObjectAtIndex:self.selectedRow withObject:self.weapon];
+        } else {
+            [weapons addObject:self.weapon];
+        }
+        detailVC.character.weapons = [NSSet setWithArray:weapons];
+    }
 }
 
 @end

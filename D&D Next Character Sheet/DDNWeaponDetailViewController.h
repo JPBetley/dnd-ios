@@ -13,11 +13,11 @@
 
 @property (strong, nonatomic) Weapon *weapon;
 
-@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *damageLabel;
 @property (weak, nonatomic) IBOutlet UILabel *weightLabel;
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *typeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *propertiesLabel;
+@property (nonatomic, assign) NSInteger selectedRow;
 
 @end

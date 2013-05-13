@@ -17,5 +17,5 @@
 -(void)updateGp:(id)sender;
 -(void)updateSp:(id)sender;
 -(void)updateCp:(id)sender;
--(IBAction)done:(UIStoryboardSegue *)sender;
+
 @end

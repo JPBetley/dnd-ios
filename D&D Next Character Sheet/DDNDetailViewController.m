@@ -36,19 +36,26 @@
             [v performSelector:@selector(setManagedObjectContext:) withObject:self.managedObjectContext];
         }
     }
+    self.navigationItem.title = self.character.name;
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
-    [self saveCharacter:nil];
+    [super viewWillDisappear:animated];
+    [self saveCharacter];
 }
 
-- (void)saveCharacter:(id)sender {
+- (void)saveCharacter {
     //self.character.name = self.nameField.text;
     NSError *error;
     if(![self.managedObjectContext save:&error]){
         NSLog(@"[ERROR] COREDATA: Save raised an error - '%@'", [error description]);
 		return;
     }
+}
+
+-(IBAction)itemSelected:(UIStoryboardSegue *)sender {
+    self.tabBarController.selectedIndex = 1;
+    [self saveCharacter];
 }
 
 - (void)viewDidLoad

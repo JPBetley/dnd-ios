@@ -39,6 +39,10 @@
 		0C324DBA173DD63000171ACC /* DDNInventoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324DB9173DD63000171ACC /* DDNInventoryViewController.m */; };
 		0C324DBD173DD64D00171ACC /* DDNStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324DBC173DD64D00171ACC /* DDNStatsViewController.m */; };
 		0C324DC0173DD65900171ACC /* DDNDiceRollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324DBF173DD65900171ACC /* DDNDiceRollerViewController.m */; };
+		0C892AB417417BB400C1C632 /* DDNArmorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C892AB317417BB400C1C632 /* DDNArmorViewController.m */; };
+		0C892AB717417BC300C1C632 /* DDNArmorDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C892AB617417BC300C1C632 /* DDNArmorDetailViewController.m */; };
+		0C892ABA1741871800C1C632 /* DDNGearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C892AB91741871800C1C632 /* DDNGearViewController.m */; };
+		0C892ABD1741872300C1C632 /* DDNGearListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C892ABC1741872300C1C632 /* DDNGearListViewController.m */; };
 		0C8D11B8173EBC8900B47299 /* paper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C8D11B7173EBC8900B47299 /* paper.jpg */; };
 		0C8D11BA173F7B1900B47299 /* JPB-Character-Sheet.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0C8D11B9173F7B1900B47299 /* JPB-Character-Sheet.sqlite */; };
 		0C8D11BE17400E3000B47299 /* DDNWeaponViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8D11BD17400E3000B47299 /* DDNWeaponViewController.m */; };
@@ -110,6 +114,14 @@
 		0C324DBC173DD64D00171ACC /* DDNStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNStatsViewController.m; sourceTree = "<group>"; };
 		0C324DBE173DD65900171ACC /* DDNDiceRollerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNDiceRollerViewController.h; sourceTree = "<group>"; };
 		0C324DBF173DD65900171ACC /* DDNDiceRollerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNDiceRollerViewController.m; sourceTree = "<group>"; };
+		0C892AB217417BB400C1C632 /* DDNArmorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNArmorViewController.h; sourceTree = "<group>"; };
+		0C892AB317417BB400C1C632 /* DDNArmorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNArmorViewController.m; sourceTree = "<group>"; };
+		0C892AB517417BC300C1C632 /* DDNArmorDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNArmorDetailViewController.h; sourceTree = "<group>"; };
+		0C892AB617417BC300C1C632 /* DDNArmorDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNArmorDetailViewController.m; sourceTree = "<group>"; };
+		0C892AB81741871800C1C632 /* DDNGearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNGearViewController.h; sourceTree = "<group>"; };
+		0C892AB91741871800C1C632 /* DDNGearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNGearViewController.m; sourceTree = "<group>"; };
+		0C892ABB1741872200C1C632 /* DDNGearListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNGearListViewController.h; sourceTree = "<group>"; };
+		0C892ABC1741872300C1C632 /* DDNGearListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNGearListViewController.m; sourceTree = "<group>"; };
 		0C8D11B7173EBC8900B47299 /* paper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = paper.jpg; sourceTree = "<group>"; };
 		0C8D11B9173F7B1900B47299 /* JPB-Character-Sheet.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JPB-Character-Sheet.sqlite"; sourceTree = "<group>"; };
 		0C8D11BC17400E3000B47299 /* DDNWeaponViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNWeaponViewController.h; sourceTree = "<group>"; };
@@ -283,6 +295,14 @@
 				0C8D11BD17400E3000B47299 /* DDNWeaponViewController.m */,
 				0C8D11BF17400E8300B47299 /* DDNWeaponDetailViewController.h */,
 				0C8D11C017400E8300B47299 /* DDNWeaponDetailViewController.m */,
+				0C892AB217417BB400C1C632 /* DDNArmorViewController.h */,
+				0C892AB317417BB400C1C632 /* DDNArmorViewController.m */,
+				0C892AB517417BC300C1C632 /* DDNArmorDetailViewController.h */,
+				0C892AB617417BC300C1C632 /* DDNArmorDetailViewController.m */,
+				0C892AB81741871800C1C632 /* DDNGearViewController.h */,
+				0C892AB91741871800C1C632 /* DDNGearViewController.m */,
+				0C892ABB1741872200C1C632 /* DDNGearListViewController.h */,
+				0C892ABC1741872300C1C632 /* DDNGearListViewController.m */,
 			);
 			name = "Inventory Controllers";
 			sourceTree = "<group>";
@@ -387,6 +407,10 @@
 				0C324DC0173DD65900171ACC /* DDNDiceRollerViewController.m in Sources */,
 				0C8D11BE17400E3000B47299 /* DDNWeaponViewController.m in Sources */,
 				0C8D11C117400E8300B47299 /* DDNWeaponDetailViewController.m in Sources */,
+				0C892AB417417BB400C1C632 /* DDNArmorViewController.m in Sources */,
+				0C892AB717417BC300C1C632 /* DDNArmorDetailViewController.m in Sources */,
+				0C892ABA1741871800C1C632 /* DDNGearViewController.m in Sources */,
+				0C892ABD1741872300C1C632 /* DDNGearListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
