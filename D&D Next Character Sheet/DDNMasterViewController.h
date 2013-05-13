@@ -15,4 +15,7 @@
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
+-(IBAction)done:(UIStoryboardSegue *)sender;
+-(IBAction)cancel:(UIStoryboardSegue *)sender;
+
 @end

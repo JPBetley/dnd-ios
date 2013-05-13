@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Character.h"
 
-@interface DDNDetailViewController : UIViewController
+@interface DDNDetailViewController : UITabBarController
 
-@property (strong, nonatomic) id detailItem;
+@property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, strong) Character *character;
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+- (void)saveCharacter:(id)sender;
+
 @end

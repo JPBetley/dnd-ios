@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2057" systemVersion="11G63b" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Armor" representedClassName="Armor" syncable="YES">
+        <attribute name="ac" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="speed" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <relationship name="character" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Character" inverseName="armor" inverseEntity="Character" syncable="YES"/>
+    </entity>
+    <entity name="Character" representedClassName="Character" syncable="YES">
+        <attribute name="ac" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="charisma" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="constitution" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="cp" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="dexterity" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="experience" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="gp" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="health" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="intelligence" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="max_health" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sp" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="strength" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="wisdom" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="armor" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Armor" inverseName="character" inverseEntity="Armor" syncable="YES"/>
+        <relationship name="gear" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Gear" inverseName="character" inverseEntity="Gear" syncable="YES"/>
+        <relationship name="profession" minCount="1" maxCount="1" deletionRule="No Action" destinationEntity="Profession" inverseName="character" inverseEntity="Profession" syncable="YES"/>
+        <relationship name="race" minCount="1" maxCount="1" deletionRule="No Action" destinationEntity="Race" inverseName="character" inverseEntity="Race" syncable="YES"/>
+        <relationship name="weapons" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Weapon" inverseName="character" inverseEntity="Weapon" syncable="YES"/>
+    </entity>
+    <entity name="Gear" representedClassName="Gear" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <relationship name="character" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Character" inverseName="gear" inverseEntity="Character" syncable="YES"/>
+    </entity>
+    <entity name="Profession" representedClassName="Profession" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="character" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Character" inverseName="profession" inverseEntity="Character" syncable="YES"/>
+    </entity>
+    <entity name="Race" representedClassName="Race" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="character" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Character" inverseName="race" inverseEntity="Character" syncable="YES"/>
+    </entity>
+    <entity name="Weapon" representedClassName="Weapon" syncable="YES">
+        <attribute name="damage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="properties" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="character" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Character" inverseName="weapons" inverseEntity="Character" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Armor" positionX="297" positionY="-72" width="128" height="150"/>
+        <element name="Character" positionX="115" positionY="-90" width="128" height="330"/>
+        <element name="Gear" positionX="306" positionY="99" width="128" height="105"/>
+        <element name="Profession" positionX="-108" positionY="-0" width="128" height="75"/>
+        <element name="Race" positionX="-108" positionY="90" width="128" height="75"/>
+        <element name="Weapon" positionX="-108" positionY="180" width="128" height="150"/>
+    </elements>
+</model>

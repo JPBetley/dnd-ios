@@ -18,9 +18,37 @@
 		0C324D67173DA0B100171ACC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C324D66173DA0B100171ACC /* Default@2x.png */; };
 		0C324D69173DA0B100171ACC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C324D68173DA0B100171ACC /* Default-568h@2x.png */; };
 		0C324D6C173DA0B100171ACC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C324D6A173DA0B100171ACC /* MainStoryboard.storyboard */; };
-		0C324D6F173DA0B100171ACC /* D_D_Next_Character_Sheet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C324D6D173DA0B100171ACC /* D_D_Next_Character_Sheet.xcdatamodeld */; };
 		0C324D72173DA0B100171ACC /* DDNMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324D71173DA0B100171ACC /* DDNMasterViewController.m */; };
 		0C324D75173DA0B100171ACC /* DDNDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324D74173DA0B100171ACC /* DDNDetailViewController.m */; };
+		0C324D7F173DA1A400171ACC /* DDNModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C324D7B173DA1A400171ACC /* DDNModel.xcdatamodeld */; };
+		0C324D80173DA1A400171ACC /* FeedFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324D7E173DA1A400171ACC /* FeedFetcher.m */; };
+		0C324D87173DA21A00171ACC /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324D86173DA21A00171ACC /* Character.m */; };
+		0C324D8A173DA21B00171ACC /* Profession.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324D89173DA21B00171ACC /* Profession.m */; };
+		0C324D8D173DA21B00171ACC /* Armor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324D8C173DA21B00171ACC /* Armor.m */; };
+		0C324D90173DA21B00171ACC /* Gear.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324D8F173DA21B00171ACC /* Gear.m */; };
+		0C324D93173DA21B00171ACC /* Weapon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324D92173DA21B00171ACC /* Weapon.m */; };
+		0C324D96173DA21B00171ACC /* Race.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324D95173DA21B00171ACC /* Race.m */; };
+		0C324D9A173DA81900171ACC /* DDNAddCharacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324D99173DA81900171ACC /* DDNAddCharacterViewController.m */; };
+		0C324DA8173DA97D00171ACC /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324D9C173DA97C00171ACC /* AbstractActionSheetPicker.m */; };
+		0C324DA9173DA97D00171ACC /* ActionSheetCustomPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324D9E173DA97C00171ACC /* ActionSheetCustomPicker.m */; };
+		0C324DAA173DA97D00171ACC /* ActionSheetDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324DA1173DA97C00171ACC /* ActionSheetDatePicker.m */; };
+		0C324DAB173DA97D00171ACC /* ActionSheetDistancePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324DA3173DA97D00171ACC /* ActionSheetDistancePicker.m */; };
+		0C324DAC173DA97D00171ACC /* ActionSheetStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324DA5173DA97D00171ACC /* ActionSheetStringPicker.m */; };
+		0C324DAD173DA97D00171ACC /* DistancePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324DA7173DA97D00171ACC /* DistancePickerView.m */; };
+		0C324DB6173DC07F00171ACC /* DDNPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324DB5173DC07F00171ACC /* DDNPicker.m */; };
+		0C324DBA173DD63000171ACC /* DDNInventoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324DB9173DD63000171ACC /* DDNInventoryViewController.m */; };
+		0C324DBD173DD64D00171ACC /* DDNStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324DBC173DD64D00171ACC /* DDNStatsViewController.m */; };
+		0C324DC0173DD65900171ACC /* DDNDiceRollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324DBF173DD65900171ACC /* DDNDiceRollerViewController.m */; };
+		0C8D11B8173EBC8900B47299 /* paper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C8D11B7173EBC8900B47299 /* paper.jpg */; };
+		0C8D11BA173F7B1900B47299 /* JPB-Character-Sheet.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0C8D11B9173F7B1900B47299 /* JPB-Character-Sheet.sqlite */; };
+		0C8D11BE17400E3000B47299 /* DDNWeaponViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8D11BD17400E3000B47299 /* DDNWeaponViewController.m */; };
+		0C8D11C117400E8300B47299 /* DDNWeaponDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8D11C017400E8300B47299 /* DDNWeaponDetailViewController.m */; };
+		0CFF70B21740926900B33B11 /* d4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CFF70AC1740926900B33B11 /* d4.png */; };
+		0CFF70B31740926900B33B11 /* d6.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CFF70AD1740926900B33B11 /* d6.png */; };
+		0CFF70B41740926900B33B11 /* d8.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CFF70AE1740926900B33B11 /* d8.png */; };
+		0CFF70B51740926900B33B11 /* d10.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CFF70AF1740926900B33B11 /* d10.png */; };
+		0CFF70B61740926900B33B11 /* d12.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CFF70B01740926900B33B11 /* d12.png */; };
+		0CFF70B71740926900B33B11 /* d20.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CFF70B11740926900B33B11 /* d20.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,11 +67,61 @@
 		0C324D66173DA0B100171ACC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		0C324D68173DA0B100171ACC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0C324D6B173DA0B100171ACC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		0C324D6E173DA0B100171ACC /* D_D_Next_Character_Sheet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = D_D_Next_Character_Sheet.xcdatamodel; sourceTree = "<group>"; };
 		0C324D70173DA0B100171ACC /* DDNMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDNMasterViewController.h; sourceTree = "<group>"; };
 		0C324D71173DA0B100171ACC /* DDNMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDNMasterViewController.m; sourceTree = "<group>"; };
 		0C324D73173DA0B100171ACC /* DDNDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDNDetailViewController.h; sourceTree = "<group>"; };
 		0C324D74173DA0B100171ACC /* DDNDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDNDetailViewController.m; sourceTree = "<group>"; };
+		0C324D7C173DA1A400171ACC /* DDNModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DDNModel.xcdatamodel; sourceTree = "<group>"; };
+		0C324D7D173DA1A400171ACC /* FeedFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedFetcher.h; sourceTree = "<group>"; };
+		0C324D7E173DA1A400171ACC /* FeedFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedFetcher.m; sourceTree = "<group>"; };
+		0C324D85173DA21A00171ACC /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		0C324D86173DA21A00171ACC /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
+		0C324D88173DA21B00171ACC /* Profession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profession.h; sourceTree = "<group>"; };
+		0C324D89173DA21B00171ACC /* Profession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profession.m; sourceTree = "<group>"; };
+		0C324D8B173DA21B00171ACC /* Armor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Armor.h; sourceTree = "<group>"; };
+		0C324D8C173DA21B00171ACC /* Armor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Armor.m; sourceTree = "<group>"; };
+		0C324D8E173DA21B00171ACC /* Gear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gear.h; sourceTree = "<group>"; };
+		0C324D8F173DA21B00171ACC /* Gear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gear.m; sourceTree = "<group>"; };
+		0C324D91173DA21B00171ACC /* Weapon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weapon.h; sourceTree = "<group>"; };
+		0C324D92173DA21B00171ACC /* Weapon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weapon.m; sourceTree = "<group>"; };
+		0C324D94173DA21B00171ACC /* Race.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Race.h; sourceTree = "<group>"; };
+		0C324D95173DA21B00171ACC /* Race.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Race.m; sourceTree = "<group>"; };
+		0C324D98173DA81900171ACC /* DDNAddCharacterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNAddCharacterViewController.h; sourceTree = "<group>"; };
+		0C324D99173DA81900171ACC /* DDNAddCharacterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNAddCharacterViewController.m; sourceTree = "<group>"; };
+		0C324D9B173DA97C00171ACC /* AbstractActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractActionSheetPicker.h; sourceTree = "<group>"; };
+		0C324D9C173DA97C00171ACC /* AbstractActionSheetPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractActionSheetPicker.m; sourceTree = "<group>"; };
+		0C324D9D173DA97C00171ACC /* ActionSheetCustomPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetCustomPicker.h; sourceTree = "<group>"; };
+		0C324D9E173DA97C00171ACC /* ActionSheetCustomPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetCustomPicker.m; sourceTree = "<group>"; };
+		0C324D9F173DA97C00171ACC /* ActionSheetCustomPickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetCustomPickerDelegate.h; sourceTree = "<group>"; };
+		0C324DA0173DA97C00171ACC /* ActionSheetDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetDatePicker.h; sourceTree = "<group>"; };
+		0C324DA1173DA97C00171ACC /* ActionSheetDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetDatePicker.m; sourceTree = "<group>"; };
+		0C324DA2173DA97C00171ACC /* ActionSheetDistancePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetDistancePicker.h; sourceTree = "<group>"; };
+		0C324DA3173DA97D00171ACC /* ActionSheetDistancePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetDistancePicker.m; sourceTree = "<group>"; };
+		0C324DA4173DA97D00171ACC /* ActionSheetStringPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetStringPicker.h; sourceTree = "<group>"; };
+		0C324DA5173DA97D00171ACC /* ActionSheetStringPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetStringPicker.m; sourceTree = "<group>"; };
+		0C324DA6173DA97D00171ACC /* DistancePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistancePickerView.h; sourceTree = "<group>"; };
+		0C324DA7173DA97D00171ACC /* DistancePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistancePickerView.m; sourceTree = "<group>"; };
+		0C324DAF173DAA3300171ACC /* ActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetPicker.h; sourceTree = "<group>"; };
+		0C324DB4173DC07F00171ACC /* DDNPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNPicker.h; sourceTree = "<group>"; };
+		0C324DB5173DC07F00171ACC /* DDNPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNPicker.m; sourceTree = "<group>"; };
+		0C324DB8173DD63000171ACC /* DDNInventoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNInventoryViewController.h; sourceTree = "<group>"; };
+		0C324DB9173DD63000171ACC /* DDNInventoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNInventoryViewController.m; sourceTree = "<group>"; };
+		0C324DBB173DD64D00171ACC /* DDNStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNStatsViewController.h; sourceTree = "<group>"; };
+		0C324DBC173DD64D00171ACC /* DDNStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNStatsViewController.m; sourceTree = "<group>"; };
+		0C324DBE173DD65900171ACC /* DDNDiceRollerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNDiceRollerViewController.h; sourceTree = "<group>"; };
+		0C324DBF173DD65900171ACC /* DDNDiceRollerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNDiceRollerViewController.m; sourceTree = "<group>"; };
+		0C8D11B7173EBC8900B47299 /* paper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = paper.jpg; sourceTree = "<group>"; };
+		0C8D11B9173F7B1900B47299 /* JPB-Character-Sheet.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JPB-Character-Sheet.sqlite"; sourceTree = "<group>"; };
+		0C8D11BC17400E3000B47299 /* DDNWeaponViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNWeaponViewController.h; sourceTree = "<group>"; };
+		0C8D11BD17400E3000B47299 /* DDNWeaponViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNWeaponViewController.m; sourceTree = "<group>"; };
+		0C8D11BF17400E8300B47299 /* DDNWeaponDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNWeaponDetailViewController.h; sourceTree = "<group>"; };
+		0C8D11C017400E8300B47299 /* DDNWeaponDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNWeaponDetailViewController.m; sourceTree = "<group>"; };
+		0CFF70AC1740926900B33B11 /* d4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d4.png; sourceTree = "<group>"; };
+		0CFF70AD1740926900B33B11 /* d6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d6.png; sourceTree = "<group>"; };
+		0CFF70AE1740926900B33B11 /* d8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d8.png; sourceTree = "<group>"; };
+		0CFF70AF1740926900B33B11 /* d10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d10.png; sourceTree = "<group>"; };
+		0CFF70B01740926900B33B11 /* d12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d12.png; sourceTree = "<group>"; };
+		0CFF70B11740926900B33B11 /* d20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d20.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,14 +170,12 @@
 		0C324D58173DA0B100171ACC /* D&D Next Character Sheet */ = {
 			isa = PBXGroup;
 			children = (
+				0C324DAE173DA98100171ACC /* Views */,
+				0C324D81173DA1A800171ACC /* Models */,
 				0C324D61173DA0B100171ACC /* DDNAppDelegate.h */,
 				0C324D62173DA0B100171ACC /* DDNAppDelegate.m */,
 				0C324D6A173DA0B100171ACC /* MainStoryboard.storyboard */,
-				0C324D70173DA0B100171ACC /* DDNMasterViewController.h */,
-				0C324D71173DA0B100171ACC /* DDNMasterViewController.m */,
-				0C324D73173DA0B100171ACC /* DDNDetailViewController.h */,
-				0C324D74173DA0B100171ACC /* DDNDetailViewController.m */,
-				0C324D6D173DA0B100171ACC /* D_D_Next_Character_Sheet.xcdatamodeld */,
+				0C324D97173DA7F000171ACC /* Controllers */,
 				0C324D59173DA0B100171ACC /* Supporting Files */,
 			);
 			path = "D&D Next Character Sheet";
@@ -108,6 +184,14 @@
 		0C324D59173DA0B100171ACC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0CFF70AC1740926900B33B11 /* d4.png */,
+				0CFF70AD1740926900B33B11 /* d6.png */,
+				0CFF70AE1740926900B33B11 /* d8.png */,
+				0CFF70AF1740926900B33B11 /* d10.png */,
+				0CFF70B01740926900B33B11 /* d12.png */,
+				0CFF70B11740926900B33B11 /* d20.png */,
+				0C8D11B9173F7B1900B47299 /* JPB-Character-Sheet.sqlite */,
+				0C8D11B7173EBC8900B47299 /* paper.jpg */,
 				0C324D5A173DA0B100171ACC /* D&D Next Character Sheet-Info.plist */,
 				0C324D5B173DA0B100171ACC /* InfoPlist.strings */,
 				0C324D5E173DA0B100171ACC /* main.m */,
@@ -117,6 +201,90 @@
 				0C324D68173DA0B100171ACC /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C324D81173DA1A800171ACC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0C324D7B173DA1A400171ACC /* DDNModel.xcdatamodeld */,
+				0C324D7D173DA1A400171ACC /* FeedFetcher.h */,
+				0C324D7E173DA1A400171ACC /* FeedFetcher.m */,
+				0C324D94173DA21B00171ACC /* Race.h */,
+				0C324D95173DA21B00171ACC /* Race.m */,
+				0C324D91173DA21B00171ACC /* Weapon.h */,
+				0C324D92173DA21B00171ACC /* Weapon.m */,
+				0C324D8E173DA21B00171ACC /* Gear.h */,
+				0C324D8F173DA21B00171ACC /* Gear.m */,
+				0C324D8B173DA21B00171ACC /* Armor.h */,
+				0C324D8C173DA21B00171ACC /* Armor.m */,
+				0C324D88173DA21B00171ACC /* Profession.h */,
+				0C324D89173DA21B00171ACC /* Profession.m */,
+				0C324D85173DA21A00171ACC /* Character.h */,
+				0C324D86173DA21A00171ACC /* Character.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		0C324D97173DA7F000171ACC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0C8D11BB17400E1500B47299 /* Inventory Controllers */,
+				0C324DB7173DD60D00171ACC /* Character Controllers */,
+				0C324D70173DA0B100171ACC /* DDNMasterViewController.h */,
+				0C324D71173DA0B100171ACC /* DDNMasterViewController.m */,
+				0C324D73173DA0B100171ACC /* DDNDetailViewController.h */,
+				0C324D74173DA0B100171ACC /* DDNDetailViewController.m */,
+				0C324D98173DA81900171ACC /* DDNAddCharacterViewController.h */,
+				0C324D99173DA81900171ACC /* DDNAddCharacterViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0C324DAE173DA98100171ACC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0C324DAF173DAA3300171ACC /* ActionSheetPicker.h */,
+				0C324D9B173DA97C00171ACC /* AbstractActionSheetPicker.h */,
+				0C324D9C173DA97C00171ACC /* AbstractActionSheetPicker.m */,
+				0C324D9D173DA97C00171ACC /* ActionSheetCustomPicker.h */,
+				0C324D9E173DA97C00171ACC /* ActionSheetCustomPicker.m */,
+				0C324D9F173DA97C00171ACC /* ActionSheetCustomPickerDelegate.h */,
+				0C324DA0173DA97C00171ACC /* ActionSheetDatePicker.h */,
+				0C324DA1173DA97C00171ACC /* ActionSheetDatePicker.m */,
+				0C324DA2173DA97C00171ACC /* ActionSheetDistancePicker.h */,
+				0C324DA3173DA97D00171ACC /* ActionSheetDistancePicker.m */,
+				0C324DA4173DA97D00171ACC /* ActionSheetStringPicker.h */,
+				0C324DA5173DA97D00171ACC /* ActionSheetStringPicker.m */,
+				0C324DA6173DA97D00171ACC /* DistancePickerView.h */,
+				0C324DA7173DA97D00171ACC /* DistancePickerView.m */,
+				0C324DB4173DC07F00171ACC /* DDNPicker.h */,
+				0C324DB5173DC07F00171ACC /* DDNPicker.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0C324DB7173DD60D00171ACC /* Character Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0C324DB8173DD63000171ACC /* DDNInventoryViewController.h */,
+				0C324DB9173DD63000171ACC /* DDNInventoryViewController.m */,
+				0C324DBB173DD64D00171ACC /* DDNStatsViewController.h */,
+				0C324DBC173DD64D00171ACC /* DDNStatsViewController.m */,
+				0C324DBE173DD65900171ACC /* DDNDiceRollerViewController.h */,
+				0C324DBF173DD65900171ACC /* DDNDiceRollerViewController.m */,
+			);
+			name = "Character Controllers";
+			sourceTree = "<group>";
+		};
+		0C8D11BB17400E1500B47299 /* Inventory Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0C8D11BC17400E3000B47299 /* DDNWeaponViewController.h */,
+				0C8D11BD17400E3000B47299 /* DDNWeaponViewController.m */,
+				0C8D11BF17400E8300B47299 /* DDNWeaponDetailViewController.h */,
+				0C8D11C017400E8300B47299 /* DDNWeaponDetailViewController.m */,
+			);
+			name = "Inventory Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +344,14 @@
 				0C324D67173DA0B100171ACC /* Default@2x.png in Resources */,
 				0C324D69173DA0B100171ACC /* Default-568h@2x.png in Resources */,
 				0C324D6C173DA0B100171ACC /* MainStoryboard.storyboard in Resources */,
+				0C8D11B8173EBC8900B47299 /* paper.jpg in Resources */,
+				0C8D11BA173F7B1900B47299 /* JPB-Character-Sheet.sqlite in Resources */,
+				0CFF70B21740926900B33B11 /* d4.png in Resources */,
+				0CFF70B31740926900B33B11 /* d6.png in Resources */,
+				0CFF70B41740926900B33B11 /* d8.png in Resources */,
+				0CFF70B51740926900B33B11 /* d10.png in Resources */,
+				0CFF70B61740926900B33B11 /* d12.png in Resources */,
+				0CFF70B71740926900B33B11 /* d20.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,9 +364,29 @@
 			files = (
 				0C324D5F173DA0B100171ACC /* main.m in Sources */,
 				0C324D63173DA0B100171ACC /* DDNAppDelegate.m in Sources */,
-				0C324D6F173DA0B100171ACC /* D_D_Next_Character_Sheet.xcdatamodeld in Sources */,
 				0C324D72173DA0B100171ACC /* DDNMasterViewController.m in Sources */,
 				0C324D75173DA0B100171ACC /* DDNDetailViewController.m in Sources */,
+				0C324D7F173DA1A400171ACC /* DDNModel.xcdatamodeld in Sources */,
+				0C324D80173DA1A400171ACC /* FeedFetcher.m in Sources */,
+				0C324D87173DA21A00171ACC /* Character.m in Sources */,
+				0C324D8A173DA21B00171ACC /* Profession.m in Sources */,
+				0C324D8D173DA21B00171ACC /* Armor.m in Sources */,
+				0C324D90173DA21B00171ACC /* Gear.m in Sources */,
+				0C324D93173DA21B00171ACC /* Weapon.m in Sources */,
+				0C324D96173DA21B00171ACC /* Race.m in Sources */,
+				0C324D9A173DA81900171ACC /* DDNAddCharacterViewController.m in Sources */,
+				0C324DA8173DA97D00171ACC /* AbstractActionSheetPicker.m in Sources */,
+				0C324DA9173DA97D00171ACC /* ActionSheetCustomPicker.m in Sources */,
+				0C324DAA173DA97D00171ACC /* ActionSheetDatePicker.m in Sources */,
+				0C324DAB173DA97D00171ACC /* ActionSheetDistancePicker.m in Sources */,
+				0C324DAC173DA97D00171ACC /* ActionSheetStringPicker.m in Sources */,
+				0C324DAD173DA97D00171ACC /* DistancePickerView.m in Sources */,
+				0C324DB6173DC07F00171ACC /* DDNPicker.m in Sources */,
+				0C324DBA173DD63000171ACC /* DDNInventoryViewController.m in Sources */,
+				0C324DBD173DD64D00171ACC /* DDNStatsViewController.m in Sources */,
+				0C324DC0173DD65900171ACC /* DDNDiceRollerViewController.m in Sources */,
+				0C8D11BE17400E3000B47299 /* DDNWeaponViewController.m in Sources */,
+				0C8D11C117400E8300B47299 /* DDNWeaponDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,17 +509,18 @@
 				0C324D7A173DA0B100171ACC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		0C324D6D173DA0B100171ACC /* D_D_Next_Character_Sheet.xcdatamodeld */ = {
+		0C324D7B173DA1A400171ACC /* DDNModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				0C324D6E173DA0B100171ACC /* D_D_Next_Character_Sheet.xcdatamodel */,
+				0C324D7C173DA1A400171ACC /* DDNModel.xcdatamodel */,
 			);
-			currentVersion = 0C324D6E173DA0B100171ACC /* D_D_Next_Character_Sheet.xcdatamodel */;
-			path = D_D_Next_Character_Sheet.xcdatamodeld;
+			currentVersion = 0C324D7C173DA1A400171ACC /* DDNModel.xcdatamodel */;
+			path = DDNModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
