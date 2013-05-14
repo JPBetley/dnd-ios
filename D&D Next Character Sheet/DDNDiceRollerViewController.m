@@ -164,6 +164,7 @@ enum {
         default:
             break;
     }
+    [self.dieText resignFirstResponder];
 }
 
 - (IBAction)rollDice:(id)sender {
@@ -198,22 +199,22 @@ enum {
     switch ([sender tag]) {
             
         case d4_TAG:
-            self.d4.text = [NSString stringWithFormat:@"%f", self.d4Stepper.value];
+            self.d4.text = [NSString stringWithFormat:@"%d", (int)self.d4Stepper.value];
             break;
         case d6_TAG:
-            self.d6.text = [NSString stringWithFormat:@"%f", self.d6Stepper.value];
+            self.d6.text = [NSString stringWithFormat:@"%d", (int)self.d6Stepper.value];
             break;
         case d8_TAG:
-            self.d8.text = [NSString stringWithFormat:@"%f", self.d8Stepper.value];
+            self.d8.text = [NSString stringWithFormat:@"%d", (int)self.d8Stepper.value];
             break;
         case d10_TAG:
-            self.d10.text = [NSString stringWithFormat:@"%f", self.d10Stepper.value];
+            self.d10.text = [NSString stringWithFormat:@"%d", (int)self.d10Stepper.value];
             break;
         case d12_TAG:
-            self.d12.text = [NSString stringWithFormat:@"%f", self.d12Stepper.value];
+            self.d12.text = [NSString stringWithFormat:@"%d", (int)self.d12Stepper.value];
             break;
         case d20_TAG:
-            self.d20.text = [NSString stringWithFormat:@"%f", self.d20Stepper.value];
+            self.d20.text = [NSString stringWithFormat:@"%d", (int)self.d20Stepper.value];
             break;
         default:
             break;

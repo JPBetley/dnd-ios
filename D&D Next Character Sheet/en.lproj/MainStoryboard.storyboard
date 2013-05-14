@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -57,7 +57,7 @@
                     <navigationItem key="navigationItem" title="Characters" id="36">
                         <barButtonItem key="leftBarButtonItem" title="Blog" id="EVX-nL-Yu4">
                             <connections>
-                                <segue destination="O3m-IU-EXb" kind="push" id="VHl-HY-IL8"/>
+                                <segue destination="O3m-IU-EXb" kind="push" identifier="blog" id="VHl-HY-IL8"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Vnb-yu-9vf">
@@ -68,11 +68,69 @@
                     </navigationItem>
                     <connections>
                         <segue destination="593-GT-U2a" kind="push" identifier="detail" id="uix-E5-bxD"/>
+                        <segue destination="nAV-De-Mht" kind="push" identifier="about" id="Hrg-M7-GMb"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1" y="52"/>
+            <point key="canvasLocation" x="-1" y="69"/>
+        </scene>
+        <!--View Controller - Thanks!-->
+        <scene sceneID="bhv-1N-zOH">
+            <objects>
+                <viewController title="Thanks!" id="nAV-De-Mht" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LF2-cV-Nmc">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Dungeons and Dragons: Next" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iBo-dY-HyM">
+                                <rect key="frame" x="20" y="36" width="280" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Character Sheet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ayW-bc-nnV">
+                                <rect key="frame" x="20" y="79" width="280" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="by" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="88J-V3-5cG">
+                                <rect key="frame" x="139" y="120" width="42" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="John Phillip Betley" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dBE-B2-m9V">
+                                <rect key="frame" x="20" y="150" width="280" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="D&amp;D: ©1995-2013 Wizards of the Coast LLC, a subsidiary of Hasbro, Inc. All Rights Reserved." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TVa-lr-A0T">
+                                <rect key="frame" x="20" y="362" width="280" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="App: ©2013 JPBetley" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Yqa-sS-Ls0">
+                                <rect key="frame" x="20" y="347" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Thanks!" id="x1o-aB-cm5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M01-kL-qZA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="639"/>
         </scene>
         <!--Add Character View Controller-->
         <scene sceneID="D5b-ng-JkF">
@@ -180,7 +238,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" minimumFontSize="17" id="zHV-gg-whb">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" id="zHV-gg-whb">
                                         <rect key="frame" x="116" y="25" width="34" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -194,14 +252,13 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="changeStepperValue:" destination="6vK-pO-QQt" eventType="valueChanged" id="08E-V2-DRI"/>
-                                            <action selector="incrementStat:" destination="GdU-EI-ARq" eventType="valueChanged" id="5Wj-QC-jyu"/>
                                         </connections>
                                     </stepper>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="d4.png" id="VPm-Ll-AGE">
                                         <rect key="frame" x="68" y="20" width="40" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" minimumFontSize="17" id="LaX-hA-z6X">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" id="LaX-hA-z6X">
                                         <rect key="frame" x="116" y="66" width="34" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -215,14 +272,13 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="changeStepperValue:" destination="6vK-pO-QQt" eventType="valueChanged" id="tzF-73-EC7"/>
-                                            <action selector="incrementStat:" destination="GdU-EI-ARq" eventType="valueChanged" id="qYq-iW-sWc"/>
                                         </connections>
                                     </stepper>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="d6.png" id="DZ3-UF-oE0">
                                         <rect key="frame" x="68" y="61" width="40" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" minimumFontSize="17" id="H3D-OM-I5q">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" id="H3D-OM-I5q">
                                         <rect key="frame" x="116" y="109" width="34" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -236,14 +292,13 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="changeStepperValue:" destination="6vK-pO-QQt" eventType="valueChanged" id="xuu-vN-ncG"/>
-                                            <action selector="incrementStat:" destination="GdU-EI-ARq" eventType="valueChanged" id="e18-uv-JCS"/>
                                         </connections>
                                     </stepper>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="d8.png" id="9DB-KJ-e9m">
                                         <rect key="frame" x="68" y="104" width="40" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" minimumFontSize="17" id="dmf-vZ-yv3">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" id="dmf-vZ-yv3">
                                         <rect key="frame" x="116" y="150" width="34" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -257,14 +312,13 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="changeStepperValue:" destination="6vK-pO-QQt" eventType="valueChanged" id="X3W-pK-kS6"/>
-                                            <action selector="incrementStat:" destination="GdU-EI-ARq" eventType="valueChanged" id="yqx-Uc-A1j"/>
                                         </connections>
                                     </stepper>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="d10.png" id="Q7s-1V-4TH">
                                         <rect key="frame" x="68" y="145" width="40" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" minimumFontSize="17" id="G9S-Or-bRn">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" id="G9S-Or-bRn">
                                         <rect key="frame" x="116" y="191" width="34" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -278,14 +332,13 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="changeStepperValue:" destination="6vK-pO-QQt" eventType="valueChanged" id="n9a-uq-09E"/>
-                                            <action selector="incrementStat:" destination="GdU-EI-ARq" eventType="valueChanged" id="VBk-5r-Rij"/>
                                         </connections>
                                     </stepper>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="d12.png" id="AMA-RI-MMF">
                                         <rect key="frame" x="68" y="186" width="40" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" minimumFontSize="17" id="NaC-5g-3vn">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" id="NaC-5g-3vn">
                                         <rect key="frame" x="116" y="232" width="34" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -294,12 +347,11 @@
                                             <outlet property="delegate" destination="6vK-pO-QQt" id="jvk-db-PpA"/>
                                         </connections>
                                     </textField>
-                                    <stepper opaque="NO" clipsSubviews="YES" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="20" id="SSc-5T-7ef">
+                                    <stepper opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="20" id="SSc-5T-7ef">
                                         <rect key="frame" x="158" y="233" width="94" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="changeStepperValue:" destination="6vK-pO-QQt" eventType="valueChanged" id="HgT-hG-jxT"/>
-                                            <action selector="incrementStat:" destination="GdU-EI-ARq" eventType="valueChanged" id="e1n-ga-JPA"/>
                                         </connections>
                                     </stepper>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="d20.png" id="ytA-SY-jut">
@@ -318,7 +370,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="2" title="Dice" id="s80-E2-2JA"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="Dice" image="130-dice.png" id="s80-E2-2JA"/>
                     <toolbarItems/>
                     <connections>
                         <outlet property="d10" destination="dmf-vZ-yv3" id="POC-XN-Zd3"/>
@@ -600,7 +652,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Stats" id="h4h-6l-kDq"/>
+                    <tabBarItem key="tabBarItem" title="Stats" image="10-medical.png" id="h4h-6l-kDq"/>
                     <connections>
                         <outlet property="armorClassStepper" destination="aWJ-hL-rkW" id="HB7-Tm-p8m"/>
                         <outlet property="armorClassText" destination="MgH-DC-u8O" id="gXs-A8-OM9"/>
@@ -1044,7 +1096,7 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <tabBarItem key="tabBarItem" tag="1" title="Inventory" id="aIL-QD-xyM"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Inventory" image="134-viking.png" id="aIL-QD-xyM"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Afj-ja-FAW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1071,21 +1123,37 @@
             </objects>
             <point key="canvasLocation" x="554" y="80"/>
         </scene>
-        <!--Table View Controller - D&D Blog Feed-->
+        <!--Blog View Controller - D&D Blog Feed-->
         <scene sceneID="KIX-am-DmN">
             <objects>
-                <tableViewController id="O3m-IU-EXb" sceneMemberID="viewController">
+                <tableViewController id="O3m-IU-EXb" customClass="DDNBlogViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="c0b-Hc-htx">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="YmW-i8-GbY">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="DxX-sa-G2b" detailTextLabel="XAf-BE-w6p" style="IBUITableViewCellStyleSubtitle" id="YmW-i8-GbY">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DxX-sa-G2b">
+                                            <rect key="frame" x="10" y="2" width="38" height="22"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XAf-BE-w6p">
+                                            <rect key="frame" x="10" y="24" width="47" height="18"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                             </tableViewCell>
@@ -1103,6 +1171,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="10-medical.png" width="22" height="22"/>
+        <image name="130-dice.png" width="35" height="28"/>
+        <image name="134-viking.png" width="26" height="17"/>
         <image name="d10.png" width="132" height="132"/>
         <image name="d12.png" width="130" height="130"/>
         <image name="d20.png" width="130" height="127"/>
@@ -1126,6 +1197,9 @@
         </class>
         <class className="DDNArmorViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DDNArmorViewController.h"/>
+        </class>
+        <class className="DDNBlogViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DDNBlogViewController.h"/>
         </class>
         <class className="DDNDetailViewController" superclassName="UITabBarController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DDNDetailViewController.h"/>

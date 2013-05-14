@@ -33,6 +33,14 @@
 
     //UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     //self.navigationItem.rightBarButtonItem = addButton;
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapped:)];
+    tap.numberOfTapsRequired = 1;
+    tap.numberOfTouchesRequired = 2;
+    [self.view addGestureRecognizer:tap];
+}
+
+- (void)tapped:(id)sender {
+    [self performSegueWithIdentifier:@"about" sender:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -135,6 +143,8 @@
         [[segue destinationViewController] setManagedObjectContext:self.managedObjectContext];
     } else if ([[segue identifier] isEqualToString:@"addNew"]) {
         [[segue destinationViewController] setManagedObjectContext:self.managedObjectContext];
+    } else if ([[segue identifier] isEqualToString:@"blog"]) {
+        
     }
 }
 

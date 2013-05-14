@@ -34,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "D&amp;D Next Character Sheet/DDNMasterViewController.m"
-         timestampString = "389986718.930718"
+         timestampString = "390236906.646132"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "59"
-         endingLineNumber = "59"
+         startingLineNumber = "67"
+         endingLineNumber = "67"
          landmarkName = "-createNewCharacterWithName:Class:Race:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -47,11 +47,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "D&amp;D Next Character Sheet/DDNMasterViewController.m"
-         timestampString = "389986718.930718"
+         timestampString = "390236906.646132"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "174"
-         endingLineNumber = "174"
+         startingLineNumber = "182"
+         endingLineNumber = "182"
          landmarkName = "-fetchedResultsController"
          landmarkType = "5">
       </FileBreakpoint>
@@ -60,11 +60,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "D&amp;D Next Character Sheet/DDNMasterViewController.m"
-         timestampString = "389986718.930718"
+         timestampString = "390236906.646132"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "173"
-         endingLineNumber = "173"
+         startingLineNumber = "181"
+         endingLineNumber = "181"
          landmarkName = "-fetchedResultsController"
          landmarkType = "5">
       </FileBreakpoint>
@@ -216,11 +216,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "D&amp;D Next Character Sheet/DDNMasterViewController.m"
-         timestampString = "389986718.930718"
+         timestampString = "390236906.646132"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "133"
-         endingLineNumber = "133"
+         startingLineNumber = "141"
+         endingLineNumber = "141"
          landmarkName = "-prepareForSegue:sender:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -433,15 +433,15 @@
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "D&amp;D Next Character Sheet/DDNMasterViewController.m"
-         timestampString = "390158922.127187"
+         timestampString = "390236906.646132"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "45"
-         endingLineNumber = "45"
+         startingLineNumber = "53"
+         endingLineNumber = "53"
          landmarkName = "-done:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -554,11 +554,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "D&amp;D Next Character Sheet/DDNDiceRollerViewController.m"
-         timestampString = "390190736.254896"
+         timestampString = "390234707.537453"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "181"
-         endingLineNumber = "181"
+         startingLineNumber = "182"
+         endingLineNumber = "182"
          landmarkName = "-rollDice:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -573,6 +573,58 @@
          startingLineNumber = "144"
          endingLineNumber = "144"
          landmarkName = "-editDice"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "D&amp;D Next Character Sheet/DDNBlogViewController.m"
+         timestampString = "390232876.590615"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "27"
+         endingLineNumber = "27"
+         landmarkName = "-feedFetcher:didLoadFeed:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "D&amp;D Next Character Sheet/DDNBlogViewController.m"
+         timestampString = "390232876.590615"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "34"
+         endingLineNumber = "34"
+         landmarkName = "-viewWillAppear:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "D&amp;D Next Character Sheet/DDNMasterViewController.m"
+         timestampString = "390236906.646132"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "139"
+         endingLineNumber = "139"
+         landmarkName = "-prepareForSegue:sender:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "D&amp;D Next Character Sheet/DDNMasterViewController.m"
+         timestampString = "390236906.646132"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "43"
+         endingLineNumber = "43"
+         landmarkName = "-pinched:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

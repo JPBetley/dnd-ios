@@ -123,6 +123,9 @@ enum {
         
         case HEALTH_TAG:
             self.character.health = [NSNumber numberWithInt:self.statText.text.intValue];
+            if (self.character.health.intValue > self.character.max_health.intValue) {
+                self.character.health = [NSNumber numberWithInt:self.character.max_health.intValue];
+            }
             if (self.character.health.intValue < -50) {
                 self.character.health = [NSNumber numberWithInt:-50];
             } else if (self.character.health.intValue > 99) {
@@ -273,6 +276,7 @@ enum {
     
     self.healthStepper.value = self.character.health.doubleValue;
     self.maxHealthStepper.value = self.character.max_health.doubleValue;
+    self.healthStepper.maximumValue = self.maxHealthStepper.value;
     self.armorClassStepper.value = self.character.ac.doubleValue;
     self.strengthStepper.value = self.character.strength.doubleValue;
     self.dexterityStepper.value = self.character.dexterity.doubleValue;

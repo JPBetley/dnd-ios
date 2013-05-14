@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C31BE541742777600180174 /* DDNBlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C31BE531742777600180174 /* DDNBlogViewController.m */; };
 		0C324D51173DA0B100171ACC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C324D50173DA0B100171ACC /* UIKit.framework */; };
 		0C324D53173DA0B100171ACC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C324D52173DA0B100171ACC /* Foundation.framework */; };
 		0C324D55173DA0B100171ACC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C324D54173DA0B100171ACC /* CoreGraphics.framework */; };
@@ -43,6 +44,11 @@
 		0C8D11BA173F7B1900B47299 /* JPB-Character-Sheet.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0C8D11B9173F7B1900B47299 /* JPB-Character-Sheet.sqlite */; };
 		0C8D11BE17400E3000B47299 /* DDNWeaponViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8D11BD17400E3000B47299 /* DDNWeaponViewController.m */; };
 		0C8D11C117400E8300B47299 /* DDNWeaponDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8D11C017400E8300B47299 /* DDNWeaponDetailViewController.m */; };
+		0CEF0AB617428E82008241AA /* 10-medical.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CEF0AB317428E82008241AA /* 10-medical.png */; };
+		0CEF0AB717428E82008241AA /* 130-dice.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CEF0AB417428E82008241AA /* 130-dice.png */; };
+		0CEF0AB817428E82008241AA /* 134-viking.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CEF0AB517428E82008241AA /* 134-viking.png */; };
+		0CEF0AC017429106008241AA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CEF0ABF17429106008241AA /* icon.png */; };
+		0CEF0AC41742913B008241AA /* icon-retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CEF0AC31742913B008241AA /* icon-retina.png */; };
 		0CFF70B21740926900B33B11 /* d4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CFF70AC1740926900B33B11 /* d4.png */; };
 		0CFF70B31740926900B33B11 /* d6.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CFF70AD1740926900B33B11 /* d6.png */; };
 		0CFF70B41740926900B33B11 /* d8.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CFF70AE1740926900B33B11 /* d8.png */; };
@@ -52,6 +58,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C31BE521742777600180174 /* DDNBlogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNBlogViewController.h; sourceTree = "<group>"; };
+		0C31BE531742777600180174 /* DDNBlogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNBlogViewController.m; sourceTree = "<group>"; };
 		0C324D4D173DA0B100171ACC /* D&D Next Character Sheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "D&D Next Character Sheet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C324D50173DA0B100171ACC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0C324D52173DA0B100171ACC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -115,6 +123,11 @@
 		0C8D11BD17400E3000B47299 /* DDNWeaponViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNWeaponViewController.m; sourceTree = "<group>"; };
 		0C8D11BF17400E8300B47299 /* DDNWeaponDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNWeaponDetailViewController.h; sourceTree = "<group>"; };
 		0C8D11C017400E8300B47299 /* DDNWeaponDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNWeaponDetailViewController.m; sourceTree = "<group>"; };
+		0CEF0AB317428E82008241AA /* 10-medical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10-medical.png"; sourceTree = "<group>"; };
+		0CEF0AB417428E82008241AA /* 130-dice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "130-dice.png"; sourceTree = "<group>"; };
+		0CEF0AB517428E82008241AA /* 134-viking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "134-viking.png"; sourceTree = "<group>"; };
+		0CEF0ABF17429106008241AA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		0CEF0AC31742913B008241AA /* icon-retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-retina.png"; path = "../icon-retina.png"; sourceTree = "<group>"; };
 		0CFF70AC1740926900B33B11 /* d4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d4.png; sourceTree = "<group>"; };
 		0CFF70AD1740926900B33B11 /* d6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d6.png; sourceTree = "<group>"; };
 		0CFF70AE1740926900B33B11 /* d8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d8.png; sourceTree = "<group>"; };
@@ -169,6 +182,8 @@
 		0C324D58173DA0B100171ACC /* D&D Next Character Sheet */ = {
 			isa = PBXGroup;
 			children = (
+				0CEF0AC31742913B008241AA /* icon-retina.png */,
+				0CEF0ABF17429106008241AA /* icon.png */,
 				0C324DAE173DA98100171ACC /* Views */,
 				0C324D81173DA1A800171ACC /* Models */,
 				0C324D61173DA0B100171ACC /* DDNAppDelegate.h */,
@@ -183,6 +198,9 @@
 		0C324D59173DA0B100171ACC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0CEF0AB317428E82008241AA /* 10-medical.png */,
+				0CEF0AB417428E82008241AA /* 130-dice.png */,
+				0CEF0AB517428E82008241AA /* 134-viking.png */,
 				0CFF70AC1740926900B33B11 /* d4.png */,
 				0CFF70AD1740926900B33B11 /* d6.png */,
 				0CFF70AE1740926900B33B11 /* d8.png */,
@@ -235,6 +253,8 @@
 				0C324D74173DA0B100171ACC /* DDNDetailViewController.m */,
 				0C324D98173DA81900171ACC /* DDNAddCharacterViewController.h */,
 				0C324D99173DA81900171ACC /* DDNAddCharacterViewController.m */,
+				0C31BE521742777600180174 /* DDNBlogViewController.h */,
+				0C31BE531742777600180174 /* DDNBlogViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -350,6 +370,11 @@
 				0CFF70B51740926900B33B11 /* d10.png in Resources */,
 				0CFF70B61740926900B33B11 /* d12.png in Resources */,
 				0CFF70B71740926900B33B11 /* d20.png in Resources */,
+				0CEF0AB617428E82008241AA /* 10-medical.png in Resources */,
+				0CEF0AB717428E82008241AA /* 130-dice.png in Resources */,
+				0CEF0AB817428E82008241AA /* 134-viking.png in Resources */,
+				0CEF0AC017429106008241AA /* icon.png in Resources */,
+				0CEF0AC41742913B008241AA /* icon-retina.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +410,7 @@
 				0C892AB717417BC300C1C632 /* DDNArmorDetailViewController.m in Sources */,
 				0C892ABA1741871800C1C632 /* DDNGearViewController.m in Sources */,
 				0C892ABD1741872300C1C632 /* DDNGearListViewController.m in Sources */,
+				0C31BE541742777600180174 /* DDNBlogViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

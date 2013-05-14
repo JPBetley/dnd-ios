@@ -168,7 +168,7 @@
 		[self.currentItemDict setObject: [self flattenHTML:self.currentTitle] forKey:@"title"];
 		[self.currentItemDict setObject:self.currentLink forKey:@"link"];
 		[self.currentItemDict setObject:self.currentSummary forKey:@"description"]; 
-		[self.currentItemDict setObject:self.currentDate forKey:@"date"]; 
+		[self.currentItemDict setObject:self.currentDate forKey:@"pubDate"]; 
 		NSMutableDictionary *tempDict = [self.currentItemDict copy];
 		[self.itemArray addObject: tempDict]; 
 		NSLog(@"adding item named: %@", self.currentTitle); 
