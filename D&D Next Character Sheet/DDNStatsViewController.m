@@ -10,6 +10,8 @@
 #import "Profession.h"
 #import "Race.h"
 
+@interface DDNStatsViewController ()
+@property UITextField *statText;
 enum {
     HEALTH_TAG = 0,
     MAX_HEALTH_TAG,
@@ -21,9 +23,6 @@ enum {
     WISDOM_TAG,
     CHARISMA_TAG
 };
-
-@interface DDNStatsViewController ()
-@property UITextField *statText;
 @end
 
 @implementation DDNStatsViewController
@@ -41,14 +40,13 @@ enum {
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.classLabel.text = ((Profession *)self.character.profession).name;
-    self.raceLabel.text = ((Race *)self.character.race).name;
 
     [self refreshStats];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    [self refreshStats];
     // register for keyboard notifications
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(keyboardWasShown:)
@@ -282,5 +280,6 @@ enum {
     self.intelligenceStepper.value = self.character.intelligence.doubleValue;
     self.wisdomStepper.value = self.character.wisdom.doubleValue;
     self.charismaStepper.value = self.character.charisma.doubleValue;
+    self.infoLabel.text = [NSString stringWithFormat:@"Level %@ %@ %@", self.character.level, self.character.race.name, self.character.profession.name];
 }
 @end

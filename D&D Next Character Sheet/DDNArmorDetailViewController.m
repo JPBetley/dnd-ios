@@ -9,16 +9,14 @@
 #import "DDNArmorDetailViewController.h"
 #import "DDNDetailViewController.h"
 
-enum {
-    ARMOR_CLASS,
-    WEIGHT,
-    PRICE,
-    TYPE,
-    SPEED
-};
-
 @interface DDNArmorDetailViewController ()
-
+    enum {
+        ARMOR_CLASS,
+        WEIGHT,
+        PRICE,
+        TYPE,
+        SPEED
+    };
 @end
 
 @implementation DDNArmorDetailViewController
@@ -84,7 +82,7 @@ enum {
             break;
         case WEIGHT:
             cell.textLabel.text = @"Weight";
-            cell.detailTextLabel.text = self.armor.weight.description;
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ lbs", self.armor.weight];
             break;
         case PRICE:
             cell.textLabel.text = @"Price";

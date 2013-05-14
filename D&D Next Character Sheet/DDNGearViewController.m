@@ -7,6 +7,7 @@
 //
 
 #import "DDNGearViewController.h"
+#import "DDNGearListViewController.h"
 
 @interface DDNGearViewController ()
 
@@ -26,12 +27,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.gear = [NSMutableArray arrayWithArray:self.character.gear.allObjects];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:self.navigationItem.rightBarButtonItem, self.editButtonItem, nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,20 +42,35 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)selectGear:(UIStoryboardSegue *)segue {
+    self.gear = [NSMutableArray arrayWithArray:self.character.gear.allObjects];
+    [self.tableView reloadData];
+}
+
+-(IBAction)cancelGear:(UIStoryboardSegue *)segue {
+    
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"detailGear"]) {
+        DDNGearListViewController *listVC = [segue destinationViewController];
+        listVC.character = self.character;
+        listVC.managedObjectContext = self.managedObjectContext;
+    }
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [self.gear count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -62,32 +79,31 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
+    Gear *gear = [self.gear objectAtIndex:indexPath.row];
+    cell.textLabel.text = gear.name;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ lbs", gear.weight];
     
     return cell;
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
 
-/*
+
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
+        
+        [self.gear removeObjectAtIndex:indexPath.row];
+        self.character.gear = [NSSet setWithArray:self.gear];
+        NSError *error;
+        if(![self.managedObjectContext save:&error]){
+            NSLog(@"[ERROR] COREDATA: Save raised an error - '%@'", [error description]);
+        }
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    }
 }
-*/
+
 
 /*
 // Override to support rearranging the table view.

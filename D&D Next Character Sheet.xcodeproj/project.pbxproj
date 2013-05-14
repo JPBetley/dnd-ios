@@ -30,11 +30,7 @@
 		0C324D96173DA21B00171ACC /* Race.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324D95173DA21B00171ACC /* Race.m */; };
 		0C324D9A173DA81900171ACC /* DDNAddCharacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324D99173DA81900171ACC /* DDNAddCharacterViewController.m */; };
 		0C324DA8173DA97D00171ACC /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324D9C173DA97C00171ACC /* AbstractActionSheetPicker.m */; };
-		0C324DA9173DA97D00171ACC /* ActionSheetCustomPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324D9E173DA97C00171ACC /* ActionSheetCustomPicker.m */; };
-		0C324DAA173DA97D00171ACC /* ActionSheetDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324DA1173DA97C00171ACC /* ActionSheetDatePicker.m */; };
-		0C324DAB173DA97D00171ACC /* ActionSheetDistancePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324DA3173DA97D00171ACC /* ActionSheetDistancePicker.m */; };
 		0C324DAC173DA97D00171ACC /* ActionSheetStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324DA5173DA97D00171ACC /* ActionSheetStringPicker.m */; };
-		0C324DAD173DA97D00171ACC /* DistancePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324DA7173DA97D00171ACC /* DistancePickerView.m */; };
 		0C324DB6173DC07F00171ACC /* DDNPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324DB5173DC07F00171ACC /* DDNPicker.m */; };
 		0C324DBA173DD63000171ACC /* DDNInventoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324DB9173DD63000171ACC /* DDNInventoryViewController.m */; };
 		0C324DBD173DD64D00171ACC /* DDNStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C324DBC173DD64D00171ACC /* DDNStatsViewController.m */; };
@@ -94,17 +90,8 @@
 		0C324D99173DA81900171ACC /* DDNAddCharacterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNAddCharacterViewController.m; sourceTree = "<group>"; };
 		0C324D9B173DA97C00171ACC /* AbstractActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractActionSheetPicker.h; sourceTree = "<group>"; };
 		0C324D9C173DA97C00171ACC /* AbstractActionSheetPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractActionSheetPicker.m; sourceTree = "<group>"; };
-		0C324D9D173DA97C00171ACC /* ActionSheetCustomPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetCustomPicker.h; sourceTree = "<group>"; };
-		0C324D9E173DA97C00171ACC /* ActionSheetCustomPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetCustomPicker.m; sourceTree = "<group>"; };
-		0C324D9F173DA97C00171ACC /* ActionSheetCustomPickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetCustomPickerDelegate.h; sourceTree = "<group>"; };
-		0C324DA0173DA97C00171ACC /* ActionSheetDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetDatePicker.h; sourceTree = "<group>"; };
-		0C324DA1173DA97C00171ACC /* ActionSheetDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetDatePicker.m; sourceTree = "<group>"; };
-		0C324DA2173DA97C00171ACC /* ActionSheetDistancePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetDistancePicker.h; sourceTree = "<group>"; };
-		0C324DA3173DA97D00171ACC /* ActionSheetDistancePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetDistancePicker.m; sourceTree = "<group>"; };
 		0C324DA4173DA97D00171ACC /* ActionSheetStringPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetStringPicker.h; sourceTree = "<group>"; };
 		0C324DA5173DA97D00171ACC /* ActionSheetStringPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetStringPicker.m; sourceTree = "<group>"; };
-		0C324DA6173DA97D00171ACC /* DistancePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistancePickerView.h; sourceTree = "<group>"; };
-		0C324DA7173DA97D00171ACC /* DistancePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistancePickerView.m; sourceTree = "<group>"; };
 		0C324DAF173DAA3300171ACC /* ActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetPicker.h; sourceTree = "<group>"; };
 		0C324DB4173DC07F00171ACC /* DDNPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNPicker.h; sourceTree = "<group>"; };
 		0C324DB5173DC07F00171ACC /* DDNPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNPicker.m; sourceTree = "<group>"; };
@@ -258,17 +245,8 @@
 				0C324DAF173DAA3300171ACC /* ActionSheetPicker.h */,
 				0C324D9B173DA97C00171ACC /* AbstractActionSheetPicker.h */,
 				0C324D9C173DA97C00171ACC /* AbstractActionSheetPicker.m */,
-				0C324D9D173DA97C00171ACC /* ActionSheetCustomPicker.h */,
-				0C324D9E173DA97C00171ACC /* ActionSheetCustomPicker.m */,
-				0C324D9F173DA97C00171ACC /* ActionSheetCustomPickerDelegate.h */,
-				0C324DA0173DA97C00171ACC /* ActionSheetDatePicker.h */,
-				0C324DA1173DA97C00171ACC /* ActionSheetDatePicker.m */,
-				0C324DA2173DA97C00171ACC /* ActionSheetDistancePicker.h */,
-				0C324DA3173DA97D00171ACC /* ActionSheetDistancePicker.m */,
 				0C324DA4173DA97D00171ACC /* ActionSheetStringPicker.h */,
 				0C324DA5173DA97D00171ACC /* ActionSheetStringPicker.m */,
-				0C324DA6173DA97D00171ACC /* DistancePickerView.h */,
-				0C324DA7173DA97D00171ACC /* DistancePickerView.m */,
 				0C324DB4173DC07F00171ACC /* DDNPicker.h */,
 				0C324DB5173DC07F00171ACC /* DDNPicker.m */,
 			);
@@ -396,11 +374,7 @@
 				0C324D96173DA21B00171ACC /* Race.m in Sources */,
 				0C324D9A173DA81900171ACC /* DDNAddCharacterViewController.m in Sources */,
 				0C324DA8173DA97D00171ACC /* AbstractActionSheetPicker.m in Sources */,
-				0C324DA9173DA97D00171ACC /* ActionSheetCustomPicker.m in Sources */,
-				0C324DAA173DA97D00171ACC /* ActionSheetDatePicker.m in Sources */,
-				0C324DAB173DA97D00171ACC /* ActionSheetDistancePicker.m in Sources */,
 				0C324DAC173DA97D00171ACC /* ActionSheetStringPicker.m in Sources */,
-				0C324DAD173DA97D00171ACC /* DistancePickerView.m in Sources */,
 				0C324DB6173DC07F00171ACC /* DDNPicker.m in Sources */,
 				0C324DBA173DD63000171ACC /* DDNInventoryViewController.m in Sources */,
 				0C324DBD173DD64D00171ACC /* DDNStatsViewController.m in Sources */,

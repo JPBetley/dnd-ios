@@ -9,15 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "Weapon.h"
 
-@interface DDNWeaponDetailViewController : UIViewController
+@interface DDNWeaponDetailViewController : UITableViewController
 
 @property (strong, nonatomic) Weapon *weapon;
 
-@property (weak, nonatomic) IBOutlet UILabel *damageLabel;
-@property (weak, nonatomic) IBOutlet UILabel *weightLabel;
-@property (weak, nonatomic) IBOutlet UILabel *priceLabel;
-@property (weak, nonatomic) IBOutlet UILabel *typeLabel;
-@property (weak, nonatomic) IBOutlet UILabel *propertiesLabel;
 @property (nonatomic, assign) NSInteger selectedRow;
 
 @end

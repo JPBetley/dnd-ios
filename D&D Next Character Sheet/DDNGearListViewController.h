@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Gear.h"
 
 @interface DDNGearListViewController : UITableViewController
+
+@property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, strong) Character *character;
+@property (strong, nonatomic) NSMutableArray *gear;
 
 @end

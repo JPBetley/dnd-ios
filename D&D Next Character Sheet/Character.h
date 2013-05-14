@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Armor, Gear, Race, Weapon;
+@class Armor, Gear, Race, Weapon, Profession;
 
 @interface Character : NSManagedObject
 
@@ -25,7 +25,7 @@
 @property (nonatomic, retain) NSNumber * wisdom;
 @property (nonatomic, retain) Armor *armor;
 @property (nonatomic, retain) NSSet *gear;
-@property (nonatomic, retain) NSManagedObject *profession;
+@property (nonatomic, retain) Profession *profession;
 @property (nonatomic, retain) Race *race;
 @property (nonatomic, retain) NSSet *weapons;
 @property (nonatomic, retain) NSNumber * ac;

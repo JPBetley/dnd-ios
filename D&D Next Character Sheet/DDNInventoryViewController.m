@@ -89,12 +89,17 @@
     [self.textField resignFirstResponder];
 }
 
+-(void)updateExperience:(id)sender {
+    self.character.experience = [NSNumber numberWithDouble:self.textField.text.doubleValue];
+    [self.textField resignFirstResponder];
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 4;
+    return 5;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -109,6 +114,8 @@
             return 1;
         case 3:
             return 3;
+        case 4:
+            return 1;
             
         default:
             break;
@@ -183,6 +190,26 @@
                                    [[UIBarButtonItem alloc]initWithTitle:@"Cancel" style:UIBarButtonItemStyleBordered target:self action:@selector(cancelNumberPad)],
                                    [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil],
                                    [[UIBarButtonItem alloc]initWithTitle:@"Apply" style:UIBarButtonItemStyleDone target:self action:action],
+                                   nil];
+            [numberToolbar sizeToFit];
+            moneyText.inputAccessoryView = numberToolbar;
+            moneyText.delegate = self;
+            return moneyCell;
+        }
+        case 4:
+        {
+            cellIdentifier = @"money";
+            UITableViewCell *moneyCell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+            UILabel *moneyLabel = (UILabel *)[moneyCell viewWithTag:2];
+            UITextField *moneyText = (UITextField *)[moneyCell viewWithTag:1];
+            moneyLabel.text = @"Experience";
+            moneyText.text = self.character.experience.description;
+            UIToolbar* numberToolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 50)];
+            numberToolbar.barStyle = UIBarStyleBlackTranslucent;
+            numberToolbar.items = [NSArray arrayWithObjects:
+                                   [[UIBarButtonItem alloc]initWithTitle:@"Cancel" style:UIBarButtonItemStyleBordered target:self action:@selector(cancelNumberPad)],
+                                   [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil],
+                                   [[UIBarButtonItem alloc]initWithTitle:@"Apply" style:UIBarButtonItemStyleDone target:self action:@selector(updateExperience:)],
                                    nil];
             [numberToolbar sizeToFit];
             moneyText.inputAccessoryView = numberToolbar;

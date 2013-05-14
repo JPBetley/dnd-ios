@@ -9,15 +9,22 @@
 #import "DDNWeaponDetailViewController.h"
 #import "DDNDetailViewController.h"
 
-@interface DDNWeaponDetailViewController ()
 
+@interface DDNWeaponDetailViewController ()
+    enum {
+        DAMAGE = 0,
+        WEIGHT,
+        PRICE,
+        TYPE,
+        PROPERTIES
+    };
 @end
 
 @implementation DDNWeaponDetailViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithStyle:(UITableViewStyle)style
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
     }
@@ -29,11 +36,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.navigationItem.title = self.weapon.name;
-    self.damageLabel.text = self.weapon.damage;
-    self.priceLabel.text = self.weapon.price;
-    self.typeLabel.text = self.weapon.type;
-    self.propertiesLabel.text = self.weapon.properties;
-    self.weightLabel.text = self.weapon.weight.description;
 }
 
 - (void)didReceiveMemoryWarning
@@ -54,5 +56,55 @@
         detailVC.character.weapons = [NSSet setWithArray:weapons];
     }
 }
+
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    // Return the number of sections.
+    return 5;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    // Return the number of rows in the section.
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    // Configure the cell...
+    switch (indexPath.section) {
+        case DAMAGE:
+            cell.textLabel.text = @"Damage";
+            cell.detailTextLabel.text = self.weapon.damage;
+            break;
+        case WEIGHT:
+            cell.textLabel.text = @"Weight";
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ lbs", self.weapon.weight];
+            break;
+        case PRICE:
+            cell.textLabel.text = @"Price";
+            cell.detailTextLabel.text = self.weapon.price;
+            break;
+        case TYPE:
+            cell.textLabel.text = @"Type";
+            cell.detailTextLabel.text = self.weapon.type;
+            break;
+        case PROPERTIES:
+            cell.textLabel.text = @"Properties";
+            cell.detailTextLabel.text = self.weapon.properties;
+            break;
+        default:
+            break;
+    }
+    
+    return cell;
+}
+
+#pragma mark - Table view delegate
 
 @end

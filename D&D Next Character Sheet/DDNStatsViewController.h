@@ -14,7 +14,7 @@
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, strong) Character *character;
 
-@property (weak, nonatomic) IBOutlet UILabel *raceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *infoLabel;
 @property (weak, nonatomic) IBOutlet UITextField *healthText;
 @property (weak, nonatomic) IBOutlet UITextField *maxHealthText;
 @property (weak, nonatomic) IBOutlet UITextField *armorClassText;
@@ -24,7 +24,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *intelligenceText;
 @property (weak, nonatomic) IBOutlet UITextField *wisdomText;
 @property (weak, nonatomic) IBOutlet UITextField *charismaText;
-@property (weak, nonatomic) IBOutlet UILabel *classLabel;
 @property (weak, nonatomic) IBOutlet UIStepper *healthStepper;
 @property (weak, nonatomic) IBOutlet UIStepper *maxHealthStepper;
 @property (weak, nonatomic) IBOutlet UIStepper *armorClassStepper;

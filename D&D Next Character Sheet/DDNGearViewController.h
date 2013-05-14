@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Character.h"
 
 @interface DDNGearViewController : UITableViewController
 
+@property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, strong) Character *character;
+@property (nonatomic, strong) NSMutableArray *gear;
 -(IBAction)selectGear:(UIStoryboardSegue *)segue;
 -(IBAction)cancelGear:(UIStoryboardSegue *)segue;
 
