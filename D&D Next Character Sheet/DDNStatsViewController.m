@@ -104,7 +104,7 @@ enum {
 -(void)textFieldDidBeginEditing:(UITextField *)textField {
     self.statText = textField;
     UIToolbar* numberToolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 50)];
-    numberToolbar.barStyle = UIBarStyleBlackTranslucent;
+    numberToolbar.barStyle = UIBarStyleBlack;
     numberToolbar.items = [NSArray arrayWithObjects:
                            [[UIBarButtonItem alloc]initWithTitle:@"Cancel" style:UIBarButtonItemStyleBordered target:self action:@selector(cancelStat)],
                            [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil],
@@ -146,8 +146,6 @@ enum {
         case ARMOR_CLASS_TAG:
             if (self.statText.text.intValue < 0) {
                 self.statText.text = @"0";
-            } else if (self.statText.text.intValue > 20) {
-                self.statText.text = @"20";
             }
             self.character.ac = [NSNumber numberWithInt:self.statText.text.intValue];
             break;

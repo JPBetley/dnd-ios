@@ -528,7 +528,7 @@
                                             <outlet property="delegate" destination="GdU-EI-ARq" id="Jop-eR-vXJ"/>
                                         </connections>
                                     </textField>
-                                    <stepper opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" id="rDH-77-HXY">
+                                    <stepper opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="99" id="rDH-77-HXY">
                                         <rect key="frame" x="62" y="115" width="94" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <connections>
@@ -551,7 +551,7 @@
                                             <outlet property="delegate" destination="GdU-EI-ARq" id="TAI-kX-6NS"/>
                                         </connections>
                                     </textField>
-                                    <stepper opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" id="aWJ-hL-rkW">
+                                    <stepper opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="99" id="aWJ-hL-rkW">
                                         <rect key="frame" x="206" y="79" width="94" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <connections>

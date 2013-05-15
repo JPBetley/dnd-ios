@@ -515,11 +515,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "D&amp;D Next Character Sheet/DDNGearListViewController.m"
-         timestampString = "390180658.907892"
+         timestampString = "390337724.483152"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "47"
-         endingLineNumber = "47"
+         startingLineNumber = "41"
+         endingLineNumber = "41"
          landmarkName = "-prepareForSegue:sender:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -528,25 +528,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "D&amp;D Next Character Sheet/DDNGearViewController.m"
-         timestampString = "390186802.626119"
+         timestampString = "390337724.483152"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "94"
-         endingLineNumber = "94"
+         startingLineNumber = "91"
+         endingLineNumber = "91"
          landmarkName = "-tableView:commitEditingStyle:forRowAtIndexPath:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "D&amp;D Next Character Sheet/DDNGearViewController.m"
-         timestampString = "390186802.626119"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "128"
-         endingLineNumber = "128"
-         landmarkName = "-tableView:didSelectRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -625,6 +612,19 @@
          startingLineNumber = "43"
          endingLineNumber = "43"
          landmarkName = "-tapped:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "D&amp;D Next Character Sheet/Weapon.m"
+         timestampString = "390341264.52881"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "21"
+         endingLineNumber = "21"
+         landmarkName = "-description"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

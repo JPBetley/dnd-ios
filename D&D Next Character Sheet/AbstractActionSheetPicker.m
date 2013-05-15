@@ -130,7 +130,7 @@
 - (void)showActionSheetPicker {
     UIView *masterView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.viewSize.width, 260)];    
     UIToolbar *pickerToolbar = [self createPickerToolbarWithTitle:self.title];
-    [pickerToolbar setBarStyle:UIBarStyleBlackTranslucent];
+    [pickerToolbar setBarStyle:UIBarStyleBlack];
     [masterView addSubview:pickerToolbar];
     self.pickerView = [self configuredPickerView];
     NSAssert(_pickerView != NULL, @"Picker view failed to instantiate, perhaps you have invalid component data.");

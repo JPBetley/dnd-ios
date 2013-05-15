@@ -54,9 +54,9 @@
         <relationship name="character" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Character" inverseName="weapons" inverseEntity="Character" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Armor" positionX="297" positionY="-72" width="128" height="150"/>
-        <element name="Character" positionX="115" positionY="-90" width="128" height="330"/>
-        <element name="Gear" positionX="306" positionY="99" width="128" height="105"/>
+        <element name="Armor" positionX="297" positionY="3" width="128" height="150"/>
+        <element name="Character" positionX="97" positionY="-15" width="128" height="330"/>
+        <element name="Gear" positionX="297" positionY="165" width="128" height="105"/>
         <element name="Profession" positionX="-108" positionY="-0" width="128" height="75"/>
         <element name="Race" positionX="-108" positionY="90" width="128" height="75"/>
         <element name="Weapon" positionX="-108" positionY="180" width="128" height="150"/>
