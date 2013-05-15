@@ -80,7 +80,8 @@
 }
 
 - (NSString *)getModifierFrom:(NSNumber *)value {
-    int val = ([value intValue] - 10) / 2;
+    int minusval = [value intValue] - 10;
+    int val = minusval < 0 ? (minusval - 1) / 2: minusval / 2;
     NSString * string;
     if (val > 0) {
         string = [NSString stringWithFormat:@"+%d", val];
