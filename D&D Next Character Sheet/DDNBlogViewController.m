@@ -29,14 +29,6 @@
     [self.tableView reloadData];
 }
 
--(void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    FeedFetcher * fetcher = [[FeedFetcher alloc] initWithURL:@"https://www.wizards.com/dnd/Globals/Services/ArticleFeed.aspx"];
-    fetcher.feedDelegate = self;
-    self.feedFetcher = fetcher;
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];

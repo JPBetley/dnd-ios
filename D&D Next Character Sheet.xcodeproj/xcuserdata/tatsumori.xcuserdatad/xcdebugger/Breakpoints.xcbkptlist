@@ -47,11 +47,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "D&amp;D Next Character Sheet/DDNMasterViewController.m"
-         timestampString = "390236906.646132"
+         timestampString = "390252685.898547"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "182"
-         endingLineNumber = "182"
+         startingLineNumber = "185"
+         endingLineNumber = "185"
          landmarkName = "-fetchedResultsController"
          landmarkType = "5">
       </FileBreakpoint>
@@ -60,11 +60,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "D&amp;D Next Character Sheet/DDNMasterViewController.m"
-         timestampString = "390236906.646132"
+         timestampString = "390252685.898547"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "181"
-         endingLineNumber = "181"
+         startingLineNumber = "184"
+         endingLineNumber = "184"
          landmarkName = "-fetchedResultsController"
          landmarkType = "5">
       </FileBreakpoint>
@@ -73,11 +73,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "D&amp;D Next Character Sheet/DDNMasterViewController.h"
-         timestampString = "389925126.767645"
+         timestampString = "390252535.663323"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "21"
-         endingLineNumber = "21"
+         startingLineNumber = "22"
+         endingLineNumber = "22"
          landmarkName = "@interface DDNMasterViewController"
          landmarkType = "2">
       </FileBreakpoint>
@@ -593,12 +593,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "D&amp;D Next Character Sheet/DDNBlogViewController.m"
-         timestampString = "390232876.590615"
+         timestampString = "390252535.663323"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "34"
-         endingLineNumber = "34"
-         landmarkName = "-viewWillAppear:"
+         startingLineNumber = "30"
+         endingLineNumber = "30"
+         landmarkName = "-feedFetcher:didLoadFeed:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -624,7 +624,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "43"
          endingLineNumber = "43"
-         landmarkName = "-pinched:"
+         landmarkName = "-tapped:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

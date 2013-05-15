@@ -144,7 +144,10 @@
     } else if ([[segue identifier] isEqualToString:@"addNew"]) {
         [[segue destinationViewController] setManagedObjectContext:self.managedObjectContext];
     } else if ([[segue identifier] isEqualToString:@"blog"]) {
-        
+        FeedFetcher * fetcher = [[FeedFetcher alloc] initWithURL:@"https://www.wizards.com/dnd/Globals/Services/ArticleFeed.aspx"];
+        fetcher.feedDelegate = [segue destinationViewController];
+        self.feedFetcher = fetcher;
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     }
 }
 

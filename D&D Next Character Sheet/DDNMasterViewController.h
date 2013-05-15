@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "FeedFetcher.h"
 #import <CoreData/CoreData.h>
 
 @interface DDNMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, strong) FeedFetcher *feedFetcher;
 
 -(IBAction)done:(UIStoryboardSegue *)sender;
 -(IBAction)cancel:(UIStoryboardSegue *)sender;

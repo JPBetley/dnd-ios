@@ -135,6 +135,9 @@ enum {
             break;
         case MAX_HEALTH_TAG:
             self.character.max_health = [NSNumber numberWithInt:self.statText.text.intValue];
+            if (self.character.max_health.intValue < self.character.health.intValue) {
+                self.character.health = [NSNumber numberWithInt:self.character.max_health.intValue];
+            }
             if (self.character.max_health.intValue > 99) {
                 self.character.max_health = [NSNumber numberWithInt:99];
             }
@@ -217,6 +220,9 @@ enum {
             break;
         case MAX_HEALTH_TAG:
             self.character.max_health = [NSNumber numberWithDouble:sender.value];
+            if (self.character.max_health.intValue < self.character.health.intValue) {
+                self.character.health = [NSNumber numberWithInt:self.character.max_health.intValue];
+            }
             break;
         case ARMOR_CLASS_TAG:
             self.character.ac = [NSNumber numberWithDouble:sender.value];

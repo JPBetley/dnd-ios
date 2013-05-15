@@ -12,6 +12,5 @@
 @interface DDNBlogViewController : UITableViewController <FeedFetcherDelegate>
 
 @property (nonatomic, strong) NSArray *articles;
-@property (nonatomic, strong) FeedFetcher *feedFetcher;
 
 @end
